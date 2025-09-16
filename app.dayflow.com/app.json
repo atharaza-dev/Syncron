@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "DayFlow",
+    "slug": "dayflow-v1",
+    "icon": "./assets/images/icon.png",
+    "version": "1.0.0",
+    "web": {
+      "bundler": "metro"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.dayflowv1",
+      "versionCode": 1
+    },
+    "ios": {
+      "icon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
