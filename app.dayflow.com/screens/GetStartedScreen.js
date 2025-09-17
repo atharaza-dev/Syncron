@@ -33,11 +33,11 @@ const GetStartedScreen = ({ navigation }) => {
       {/* Buttons Container */}
       <View className="absolute bottom-8 w-full px-6">
         <TouchableOpacity
-          className="bg-blue-500 py-4 rounded-xl items-center mb-4 shadow-sm"
+          className="bg-[#2563eb] py-4 rounded-xl items-center mb-4 shadow-sm"
           onPress={() => navigation.navigate('OTP')}
           activeOpacity={0.8}
         >
-          <Text className="text-white font-JakartaBold text-lg tracking-wider">
+          <Text className="text-white  text-lg tracking-wider">
             Sign In
           </Text>
         </TouchableOpacity>
@@ -47,7 +47,7 @@ const GetStartedScreen = ({ navigation }) => {
           onPress={() => navigation.navigate('Auth')}
           activeOpacity={0.7}
         >
-          <Text className="text-black font-JakartaBold text-lg tracking-wider">
+          <Text className="text-black text-lg tracking-wider">
             Create an Account
           </Text>
         </TouchableOpacity>

@@ -31,7 +31,7 @@ export default function HomeScreen() {
             resizeMode="cover"
           >
             {/* Header with Welcome Text and Avatar */}
-            <View className="flex-row items-center justify-between px-6 py-12">
+            <View className="flex-row items-center justify-between px-8 py-12">
               <Image
                 source={logo}
                 className="w-[100px] h-12 rounded-full"

@@ -3,8 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text, StatusBar, SafeAreaView } from 'react-native';
 import HomeScreen from './HomeScreen';
 import ProfileScreen from './ProfileScreen';
+import PasswordScreen from './PasswordScreen'
+import TaskScreen from './TaskScreen'
 import SettingsScreen from './SettingsScreen';
-import { Home, Landmark, ArrowLeftRight, CreditCard, CirclePoundSterling, LockKeyholeOpen, ListTodo, Settings } from "lucide-react-native";
+import { Home, CirclePoundSterling, LockKeyholeOpen, ListTodo, Settings } from "lucide-react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -79,7 +81,7 @@ export default function DashboardNavigator() {
                 {/* Spending */}
                 <Tab.Screen
                     name="Spending"
-                    component={SettingsScreen}
+                    component={PasswordScreen}
                     options={{
                         tabBarIcon: ({ color, focused }) => (
                             <View style={{ alignItems: 'center' }}>
@@ -103,7 +105,7 @@ export default function DashboardNavigator() {
                 {/* Card */}
                 <Tab.Screen
                     name="Card"
-                    component={ProfileScreen}
+                    component={TaskScreen}
                     options={{
                         tabBarIcon: ({ color, focused }) => (
                             <View style={{ alignItems: 'center' }}>
@@ -126,7 +128,7 @@ export default function DashboardNavigator() {
 
                 <Tab.Screen
                     name="Sok"
-                    component={ProfileScreen}
+                    component={SettingsScreen}
                     options={{
                         tabBarIcon: ({ color, focused }) => (
                             <View style={{ alignItems: 'center' }}>

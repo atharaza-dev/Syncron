@@ -142,7 +142,7 @@ const OTPVerification = ({ navigation }) => {
         {/* Verify Button full width at bottom */}
         <TouchableOpacity
           className={`h-14 rounded-lg items-center justify-center 
-            ${isComplete ? 'bg-blue-500' : 'bg-slate-300'}`}
+            ${isComplete ? 'bg-[#2563eb]' : 'bg-slate-300'}`}
           onPress={handleVerify}
           disabled={!isComplete}
           activeOpacity={0.8}

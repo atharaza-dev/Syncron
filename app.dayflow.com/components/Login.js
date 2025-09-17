@@ -8,7 +8,7 @@ import {
   Image,
   SafeAreaView,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { EyeClosed, Eye } from "lucide-react-native";
 import logo from '../assets/images/logoLight.png';
 
 const Login = ({ navigation }) => {
@@ -65,8 +65,7 @@ const Login = ({ navigation }) => {
               placeholderTextColor="#999"
             />
             <TouchableOpacity className="px-4" onPress={() => setSecureText(!secureText)}>
-              <Icon
-                name={secureText ? 'visibility-off' : 'visibility'}
+              <Eye
                 size={20}
                 color="#999"
               />

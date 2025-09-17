@@ -8,7 +8,7 @@ import {
   Image,
   SafeAreaView, // Import SafeAreaView
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { EyeClosed, Eye } from "lucide-react-native";
 import logo from '../assets/images/logoLight.png';
 
 const Register = ({ navigation }) => {
@@ -77,8 +77,7 @@ const Register = ({ navigation }) => {
               placeholderTextColor="#999"
             />
             <TouchableOpacity className="px-4" onPress={() => setSecureText(!secureText)}>
-              <Icon
-                name={secureText ? 'visibility-off' : 'visibility'}
+              <Eye
                 size={20}
                 color="#999"
               />
@@ -108,7 +107,7 @@ const Register = ({ navigation }) => {
 
         {/* Register Button */}
         <TouchableOpacity className="bg-blue-600 py-4 rounded-lg items-center mb-5">
-          <Text className="text-white font-Cal tracking-wider">Register Now</Text>
+          <Text className="text-white  tracking-wider ">Register Now</Text>
         </TouchableOpacity>
 
         {/* Or Divider */}
@@ -120,7 +119,7 @@ const Register = ({ navigation }) => {
           className="bg-dark py-4 rounded-lg items-center mb-5"
           onPress={() => navigation.navigate('Login')}
         >
-          <Text className="text-white font-Cal tracking-wider">
+          <Text className="text-white  tracking-wider">
             Already have an account? Login
           </Text>
         </TouchableOpacity>
