@@ -9,6 +9,8 @@ import {
   Animated,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Trash2Icon, Delete } from "lucide-react-native";
+
 import logo from '../assets/images/logoLight.png';
 
 const OTPVerification = ({ navigation }) => {
@@ -119,7 +121,7 @@ const OTPVerification = ({ navigation }) => {
             onPress={handleClear}
             activeOpacity={0.7}
           >
-            <Icon name="clear" size={24} color="#1e293b" />
+            <Trash2Icon  size={20} color="#1e293b" />
           </TouchableOpacity>
           <TouchableOpacity
             className="flex-1 h-16 bg-slate-100 rounded-lg items-center justify-center mx-1"
@@ -133,7 +135,7 @@ const OTPVerification = ({ navigation }) => {
             onPress={handleBackspace}
             activeOpacity={0.7}
           >
-            <Icon name="backspace" size={24} color="#1e293b" />
+            <Delete size={20} color="#1e293b" />
           </TouchableOpacity>
         </View>
 
