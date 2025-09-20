@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DayFlow",
-    "slug": "dayflow-v1",
+    "name": "Syncron",
+    "slug": "syncron-v1",
     "icon": "./assets/images/icon.png",
     "version": "1.0.0",
     "web": {

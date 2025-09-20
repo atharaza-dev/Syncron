@@ -13,7 +13,7 @@ import bg from '../../assets/images/bg.jpg';
 import logo from '../../assets/images/logoDark.png'
 import avatar from '../../assets/images/avatar.png';
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
   return (
     <View className="flex-1 bg-white">
       <StatusBar barStyle="dark-content" backgroundColor="#8B5CF6" />
@@ -124,7 +124,7 @@ export default function HomeScreen() {
 
                 {/* Enhanced Action Buttons */}
                 <View className="flex-row items-center">
-                  <TouchableOpacity className="bg-[#2563eb]  flex-row items-center justify-center flex-1 rounded p-2">
+                  <TouchableOpacity onPress={() => navigation.navigate('ExpenseBook')} className="bg-[#2563eb]  flex-row items-center justify-center flex-1 rounded p-2">
                     <Eye size={18} color="white" />
                     <Text className="ml-2 text-white font-semibold text-sm">View</Text>
                   </TouchableOpacity>

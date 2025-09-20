@@ -7,6 +7,7 @@ import SplashScreen from './screens/SplashScreen';
 import GetStartedScreen from './screens/GetStartedScreen';
 import AuthScreen from './screens/AuthScreen';
 import OTPScreen from './screens/OTPScreen'
+import ExpenseBook from './screens/Dashboard/ExpenseBook'
 import DashboardNavigator from './screens/Dashboard/DashboardNavigator';
 
 const Stack = createNativeStackNavigator();
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
         <Stack.Screen name="OTP" component={OTPScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Dashboard" component={DashboardNavigator} />
+        {/* <Stack.Screen name="ExpenseBook" component={ExpenseBook} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
